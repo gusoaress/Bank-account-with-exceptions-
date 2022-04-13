@@ -1,11 +1,66 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Cake.VsCode/0.11.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Cake.VsCode.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Cake.VsCode.dll": {}
+        }
+      },
+      "TypeEdge.Module.VsCode/0.4.1": {
+        "type": "package"
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Cake.VsCode/0.11.1": {
+      "sha512": "0ADupL3ztOCdsIhv2qtZNFLNM+Q87iKhWIzDYE9mPs2RyI86RYtTXqTeSlhY4wmzGYGwnugVGGvqihAaCbda4Q==",
+      "type": "package",
+      "path": "cake.vscode/0.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cake.vscode.0.11.1.nupkg.sha512",
+        "cake.vscode.nuspec",
+        "lib/netstandard2.0/Cake.VsCode.dll",
+        "lib/netstandard2.0/Cake.VsCode.pdb",
+        "lib/netstandard2.0/Cake.VsCode.xml"
+      ]
+    },
+    "TypeEdge.Module.VsCode/0.4.1": {
+      "sha512": "xN7wWoxaqZcKJXIVU3JzpUzxFsYHmPJ4cjp1chzptRSAaEyG7erboqaPL07YvJPYTX7iPt+4M7KGNZ5H23OwGA==",
+      "type": "package",
+      "path": "typeedge.module.vscode/0.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/.template.config/dotnetcli.host.json",
+        "content/.template.config/template.json",
+        "content/Dockerfile.amd64",
+        "content/Dockerfile.amd64.debug",
+        "content/Dockerfile.arm32v7",
+        "content/Dockerfile.windows-amd64",
+        "content/Program.cs",
+        "content/Shared/ITypeEdgeModuleVsCode.cs",
+        "content/Shared/Messages/TypeEdgeModuleVsCodeOutput.cs",
+        "content/Shared/Twins/TypeEdgeModuleVsCodeTwin.cs",
+        "content/TypeEdgeModuleVsCode.cs",
+        "content/TypeEdgeModuleVsCode.csproj",
+        "content/module.json",
+        "typeedge.module.vscode.0.4.1.nupkg.sha512",
+        "typeedge.module.vscode.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Cake.VsCode >= 0.11.1",
+      "TypeEdge.Module.VsCode >= 0.4.1"
+    ]
   },
   "packageFolders": {
     "/home/runner/.nuget/packages/": {}
@@ -43,6 +98,16 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "netcoreapp6.0",
+        "dependencies": {
+          "Cake.VsCode": {
+            "target": "Package",
+            "version": "[0.11.1, )"
+          },
+          "TypeEdge.Module.VsCode": {
+            "target": "Package",
+            "version": "[0.4.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

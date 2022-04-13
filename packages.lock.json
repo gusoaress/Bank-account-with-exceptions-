@@ -1,6 +1,19 @@
 {
   "version": 1,
   "dependencies": {
-    "net6.0": {}
+    "net6.0": {
+      "Cake.VsCode": {
+        "type": "Direct",
+        "requested": "[0.11.1, )",
+        "resolved": "0.11.1",
+        "contentHash": "0ADupL3ztOCdsIhv2qtZNFLNM+Q87iKhWIzDYE9mPs2RyI86RYtTXqTeSlhY4wmzGYGwnugVGGvqihAaCbda4Q=="
+      },
+      "TypeEdge.Module.VsCode": {
+        "type": "Direct",
+        "requested": "[0.4.1, )",
+        "resolved": "0.4.1",
+        "contentHash": "xN7wWoxaqZcKJXIVU3JzpUzxFsYHmPJ4cjp1chzptRSAaEyG7erboqaPL07YvJPYTX7iPt+4M7KGNZ5H23OwGA=="
+      }
+    }
   }
 }

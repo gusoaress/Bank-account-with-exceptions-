@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Q3lrylnOI4lW9ofxPmJUHjYqauYDtE5OxkjwEGmEoJZPahWep7jfuLELuIW3c1GzWkOct8AyMN/uYLQYzkTKuQ==",
+  "dgSpecHash": "o998Ncqn6tvlyowuoZ9Vqlkl83rxyOCGpJ+VkQa3Tn701MwyD1ddvFs40XBGPSwR6TI8sUUDELwDmm+9cf0+iw==",
   "success": true,
   "projectFilePath": "/home/runner/Exersise-Bank-account-with-exceptions/main.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/runner/.nuget/packages/cake.vscode/0.11.1/cake.vscode.0.11.1.nupkg.sha512",
+    "/home/runner/.nuget/packages/typeedge.module.vscode/0.4.1/typeedge.module.vscode.0.4.1.nupkg.sha512"
+  ],
   "logs": []
 }

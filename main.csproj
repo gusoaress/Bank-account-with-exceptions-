@@ -6,4 +6,9 @@
 		<StartupObject>Program</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Cake.VsCode" Version="0.11.1" />
+    <PackageReference Include="TypeEdge.Module.VsCode" Version="0.4.1" />
+  </ItemGroup>
+
 </Project>
